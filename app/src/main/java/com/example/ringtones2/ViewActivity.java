@@ -3,7 +3,6 @@ package com.example.ringtones2;
 import android.os.Bundle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -18,6 +17,7 @@ public class ViewActivity extends AppCompatActivity {
     Button blue1, blue2, blue3, blue4, blue5;
 
     MediaPlayer mp1, mp2, mp3, mp4, mp5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,6 +72,7 @@ public class ViewActivity extends AppCompatActivity {
                 }
             }
         });
+
         play3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,6 +85,7 @@ public class ViewActivity extends AppCompatActivity {
                 }
             }
         });
+
         play4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,6 +98,7 @@ public class ViewActivity extends AppCompatActivity {
                 }
             }
         });
+
         play5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -106,6 +109,172 @@ public class ViewActivity extends AppCompatActivity {
                     mp5.start();
                     Toast.makeText(ViewActivity.this, "Reproduciendo Guns", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        share1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ViewActivity.this, ShareActivity.class);
+                startActivity(i);
+            }
+        });
+
+        share2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ViewActivity.this, ShareActivity.class);
+                startActivity(i);
+            }
+        });
+
+        share3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ViewActivity.this, ShareActivity.class);
+                startActivity(i);
+            }
+        });
+
+        share4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ViewActivity.this, ShareActivity.class);
+                startActivity(i);
+            }
+        });
+
+        share5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ViewActivity.this, ShareActivity.class);
+                startActivity(i);
+            }
+        });
+
+        blue1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear una alerta
+                AlertDialog.Builder alerta = new AlertDialog.Builder(ViewActivity.this);
+                alerta.setMessage("¡Muchas felicidades! Has conseguido un punto. Sigue juntando puntos para recibir fantásticas recompensas... ¿Deseas salir?")
+                        .setCancelable(false)
+                        .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+
+                AlertDialog titulo = alerta.create();
+                titulo.setTitle("¡Felicidades!!!");
+                titulo.show();
+            }
+        });
+        blue2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear una alerta
+                AlertDialog.Builder alerta = new AlertDialog.Builder(ViewActivity.this);
+                alerta.setMessage("¡Muchas felicidades! Has conseguido un punto. Sigue juntando puntos para recibir fantásticas recompensas... ¿Deseas salir?")
+                        .setCancelable(false)
+                        .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+
+                AlertDialog titulo = alerta.create();
+                titulo.setTitle("¡Felicidades!!!");
+                titulo.show();
+            }
+        });
+        blue3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear una alerta
+                AlertDialog.Builder alerta = new AlertDialog.Builder(ViewActivity.this);
+                alerta.setMessage("¡Muchas felicidades! Has conseguido un punto. Sigue juntando puntos para recibir fantásticas recompensas... ¿Deseas salir?")
+                        .setCancelable(false)
+                        .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+
+                AlertDialog titulo = alerta.create();
+                titulo.setTitle("¡Felicidades!!!");
+                titulo.show();
+            }
+        });
+        blue4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear una alerta
+                AlertDialog.Builder alerta = new AlertDialog.Builder(ViewActivity.this);
+                alerta.setMessage("¡Muchas felicidades! Has conseguido un punto. Sigue juntando puntos para recibir fantásticas recompensas... ¿Deseas salir?")
+                        .setCancelable(false)
+                        .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+
+                AlertDialog titulo = alerta.create();
+                titulo.setTitle("¡Felicidades!!!");
+                titulo.show();
+            }
+        });
+        blue5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear una alerta
+                AlertDialog.Builder alerta = new AlertDialog.Builder(ViewActivity.this);
+                alerta.setMessage("¡Muchas felicidades! Has conseguido un punto. Sigue juntando puntos para recibir fantásticas recompensas... ¿Deseas salir?")
+                        .setCancelable(false)
+                        .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+
+                AlertDialog titulo = alerta.create();
+                titulo.setTitle("¡Felicidades!!!");
+                titulo.show();
             }
         });
     }
